@@ -10,5 +10,6 @@ namespace ModelLayer
         public long MemberId { get; set; }
         public DateTime DateOfOrdination { get; set; }
         
+        public Member Member { get; set; }
     }
 }

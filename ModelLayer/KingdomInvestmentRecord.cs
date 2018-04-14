@@ -9,5 +9,6 @@ namespace ModelLayer
         public decimal AmountReceived { get; set; }
         public DateTime DateOfPayment { get; set; }
         public string Description { get; set; }
+
     }
 }

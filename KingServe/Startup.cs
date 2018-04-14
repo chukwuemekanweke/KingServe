@@ -31,7 +31,7 @@ namespace KingServe
             services.AddScoped<IUnitOfWork, UnitOfWork<KingServeContext>>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("KingServeDbMySql")), , b => b.MigrationsAssembly("KingServe")));
+                options.UseMySql(Configuration.GetConnectionString("KingServeDbMySql"), b => b.MigrationsAssembly("KingServe")));
 
             services.AddDbContext<KingServeContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("KingServeDbMySql"), b => b.MigrationsAssembly("KingServe")));
